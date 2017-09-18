@@ -39,7 +39,7 @@ public class A2Q2 {
 
     public static void main(String[] args) {
         A2Q2 test = new A2Q2();
-        int sum = test.digitalRoot(2019, 0);
+        int sum = test.digitalRoot(126, 0);
         System.out.println(sum);
         //Outputs number to user
     }
