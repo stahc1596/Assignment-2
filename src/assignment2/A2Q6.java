@@ -12,19 +12,31 @@ public class A2Q6 {
 
     public int convert(int n, int b){
         String s = "ABCDEF";
-        if(n == 0){
-            return 0;
-        }else{
-            if(n%b < 10){
-                System.out.print(n%b);
-            }else{
-                System.out.print(s.charAt((n%b) - 10));
+        //String to take characters from
+        if(n != 0){
+            int x = convert(n/b, b);
+            //Recursion
+            if(x < 10 && x > 0){
+                System.out.print(x);
+                //If the remainder is less than ten, then the system will ouput
+                //the number
+            }else if(x >= 10){
+                System.out.print(s.charAt(x - 10));
+                //If the remainder is above ten, then the system will output the
+                //corresponding letter from the string
             }
-            return convert(n/b, b);
         }
+        //If statement does recursion as long as the number isn't zero
+            return n%b;
+            //Base statement
+        
     }
     public static void main(String[] args) {
         A2Q6 test = new A2Q6();
-        int i = test.convert(1000, 16);
+        int a = 1000;
+        //Positive integer
+        int b = 16;
+        //Positive base
+        int i = test.convert(a*b, b);
     }
 }
