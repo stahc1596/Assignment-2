@@ -13,7 +13,7 @@ public class A2Q6 {
     public int convert(int n, int b){
         String s = "ABCDEF";
         //String to take characters from
-        if(n != 0){
+        if(n > 0){
             int x = convert(n/b, b);
             //Recursion
             if(x < 10 && x > 0){
