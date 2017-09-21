@@ -23,7 +23,7 @@ public class A2Q7 {
         A2Q7 test = new A2Q7();
         int p = test.isPalindrom("radar", 0);
         //Starts the recursion
-        if(p ==1){
+        if(p == 1){
             System.out.println("true");
             //If the word is a pallindrom, then the system tells the user it is
         }else{
