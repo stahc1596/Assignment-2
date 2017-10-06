@@ -35,7 +35,7 @@ public class A2Q6 {
         A2Q6 test = new A2Q6();
         int a = 1000;
         //Positive integer
-        int b = 8;
+        int b = 16;
         //Positive base
         int i = test.convert(a*b, b);
     }
