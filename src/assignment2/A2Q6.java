@@ -16,7 +16,7 @@ public class A2Q6 {
         if(n > 0){
             int x = convert(n/b, b);
             //Recursion
-            if(x < 10 && x > 0){
+            if(x < 10 && x >= 0){
                 System.out.print(x);
                 //If the remainder is less than ten, then the system will ouput
                 //the number
@@ -35,7 +35,7 @@ public class A2Q6 {
         A2Q6 test = new A2Q6();
         int a = 1000;
         //Positive integer
-        int b = 16;
+        int b = 8;
         //Positive base
         int i = test.convert(a*b, b);
     }
